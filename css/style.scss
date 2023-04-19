@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Poppins:wght@400;500;600;700;800&family=Rubik:ital,wght@0,300;0,900;1,400;1,800&display=swap');
+
+$myFont: "Open Sans", sans-serif;
+$myColor: #000;
+$myFontSize: 16px;
+$width2:50%;
+$width3:100%;
+$color2:#000;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  margin: 0px;
+  padding: 0px;
+}
+.title--section{
+  font-size: $myFontSize;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    color: $color2;
+    font-family: $myFont;
+}
+
+.banner__content--timer{
+    font-size: 0.7em;
+    color: #8e8a8a;
+}
+
+.banner--content-block{
+    .image--block{
+        width: $width2;
+        float: left;
+    }
+
+} 
+.image--block {
+    img{
+        width: 80%;
+        margin: 50px auto;
+        display: block;
+    }
+}
+.banner--content-block{
+    .content--block{
+   width: $width2;
+   float: left;
+   margin-top: 70px;
+    }
+    h2{
+        color: #000;
+        border-bottom: 0.1em solid #767676;
+        width: 46% !important;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    p{
+        width: 80%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .btn__click--here{
+        background: #000;
+        color: #fff;
+        padding: 1em 2em;
+        border: 0em;
+        font-size: 1em;
+        margin-top: 1em;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        -webkit-transition: all ease .5s;
+        transition: all ease .5s;
+        
+    }
+}
+
+    .content--block2{
+        width: auto;
+        text-align: left;
+        display: block;
+        margin: auto 80px;
+        float: left;
+        
+    }
+    .content--block2{
+        h2{
+            color: #000;
+            border-bottom: 0.1em solid #767676;
+            width: 9% !important;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+        }
+        p{
+            width: 100%;
+        }
+    } 
+
+
+
+
+
+              
+
