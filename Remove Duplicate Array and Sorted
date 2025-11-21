@@ -16,3 +16,15 @@ for(let i=0; i<unique.length; i++){
     }
 }
 console.log(unique, "it was print unique value");
+
+// Bubble sort
+for (let i = 0; i < unique.length; i++) {
+    for (let j = 0; j < unique.length - i - 1; j++) {
+        if (unique[j] > unique[j + 1]) {
+            let temp = unique[j];
+            unique[j] = unique[j + 1];
+            unique[j + 1] = temp;
+        }
+    }
+}
+
