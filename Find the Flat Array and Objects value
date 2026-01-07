@@ -55,3 +55,17 @@ const extractValues = (obj) => { // find the value
 };
 const result = extractValues(a);
 console.log(result);
+
+let arr = [1,[2,3],4,5,6,[7,8],9];
+function FlatArray(ar){
+    let result = [];
+    for(let item of ar){
+        if(Array.isArray(item)){
+            result.push(...FlatArray(item));
+        }else{
+            result.push(item)
+        }
+    }
+    return result;
+}
+console.log(FlatArray(arr));
