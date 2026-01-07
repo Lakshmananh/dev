@@ -1,0 +1,57 @@
+let arr = [1,[2,[3,[4,5]]]];
+function FlatArray(arr){
+    let result = [];
+    for(let i=0; i< arr.length; i++){
+        if(Array.isArray(arr[i])){
+            const flat = FlatArray(arr[i]);
+            for(let j=0; j<flat.length; j++){
+                result.push(flat[j]); 
+            }
+        } else{
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+const reflat = FlatArray(arr);
+console.log(reflat);
+
+const a = {
+  b: 1,
+  c: {
+    d: {
+      e: 2
+    },
+    f: {
+      g: 3
+    }
+  },
+  h: 4
+};
+
+const extractKeys = (obj) => { // find the key 
+  let keys = [];
+  for (let key in obj) {
+    keys.push(key);
+    if (typeof obj[key] === "object" && obj[key] !== null) {
+      keys = keys.concat(extractKeys(obj[key]));
+    }
+  }
+  return keys;
+};
+console.log(extractKeys(a));
+
+const extractValues = (obj) => { // find the value
+  let values = [];
+  for (let key in obj) {
+    const value = obj[key];
+    if (typeof value === "object" && value !== null) {
+      values = values.concat(extractValues(value));
+    } else {
+      values.push(value);
+    }
+  }
+  return values;
+};
+const result = extractValues(a);
+console.log(result);
