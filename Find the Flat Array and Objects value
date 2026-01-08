@@ -44,11 +44,10 @@ console.log(extractKeys(a));
 const extractValues = (obj) => { // find the value
   let values = [];
   for (let key in obj) {
-    const value = obj[key];
-    if (typeof value === "object" && value !== null) {
-      values = values.concat(extractValues(value));
+    if (typeof obj[key] === "object" && obj[key] !== null) {
+      values = values.concat(extractValues(obj[key]));
     } else {
-      values.push(value);
+      values.push(obj[key]);
     }
   }
   return values;
