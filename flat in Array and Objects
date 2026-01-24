@@ -23,7 +23,6 @@
 
 function flatValues(obj) { 
     let result = [];
-
     function helper(innerObj) {
         for (let key in innerObj) {
             if (typeof innerObj[key] === "object" && innerObj[key] !== null) {
@@ -33,11 +32,9 @@ function flatValues(obj) {
             }
         }
     }
-
     helper(obj);   // start recursion
     return result;
 }
-
 console.log(flatValues(a));
 
 
@@ -45,21 +42,17 @@ Full working code (Flatten keys)
 
 function flatKeys(obj) { 
     let result = [];
-
     function helper(innerObj) {
         for (let key in innerObj) {
             result[result.length] = key;   // store key
-
             if (typeof innerObj[key] === "object" && innerObj[key] !== null) {
                 helper(innerObj[key]);     // recursion
             }
         }
     }
-
     helper(obj);
     return result;
 }
-
 console.log(flatKeys(a));
 
 
