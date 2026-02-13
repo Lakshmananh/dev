@@ -1,0 +1,14 @@
+// Fine the Unique Charater
+let chr = "swiss cheese";
+let dup = [];
+for (let i = 0; i < chr.length; i++) {
+  if (chr.indexOf(chr[i]) !== chr.lastIndexOf(chr[i]) && !dup.includes(chr[i])) {
+    dup.push(chr[i]);
+  }
+}
+console.log(dup.join(""), "Duplicates");
+
+//Output is se //
+
+// Remove the Duplicate using Set
+
