@@ -12,3 +12,18 @@ console.log(dup.join(""), "Duplicates");
 
 // Remove the Duplicate using Set
 
+let chr = "swiss cheese";
+let result = [...new Set(chr)].join(" ");
+console.log(result);
+
+//withOut Set method using inbuild in methods
+
+let chr = "swiss cheese";
+let result  = "";
+for(let i=0; i<chr.length; i++){
+    if(!result.includes(chr[i])){
+        result += chr[i];
+    }
+}
+console.log(result, "Remove the Duplicates");
+
