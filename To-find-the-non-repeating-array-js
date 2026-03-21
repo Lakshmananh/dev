@@ -1,0 +1,12 @@
+// To Fine the non-repeating number 
+let arr = [4, 5, 1, 2, 0, 4, 1, 2];
+function nonRepeatingNumner(arr){
+    let result = [];
+    for(let i=0; i<arr.length; i++){
+        if(arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i])){
+            result.push(arr[i])
+        }
+    }
+    return result;
+}
+console.log(nonRepeatingNumner(arr));
