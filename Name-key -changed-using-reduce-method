@@ -1,0 +1,86 @@
+
+const students = [ 
+    { 
+        name: "john", 
+        age: 27, 
+        gender: "male", 
+        course: "Computer Science", 
+        grade: "A", 
+        city: "New York" 
+        
+    }, 
+    { 
+        name: "sara", 
+        age: 24, 
+        gender: "female", 
+        course: "Mathematics", 
+        grade: "B", 
+        city: "London" 
+        
+    }, 
+    { 
+        name: "mike", 
+        age: 29, 
+        gender: "male", 
+        course: "Physics", 
+        grade: "A", 
+        city: "Toronto" 
+        
+    } 
+];
+
+const result = students.reduce((acc, curr) => {
+    const {name, ...rest} = curr;
+    
+    acc[name] = rest;
+    return acc;
+}, {});
+
+console.log(result);
+
+Explanation
+reduce() converts array → object
+{ name, ...rest }
+name → extracted
+rest → remaining properties
+acc[name] = rest
+name becomes object key
+
+
+output will be
+{
+  john: {
+    age: 27,
+    gender: 'male',
+    course: 'Computer Science',
+    grade: 'A',
+    city: 'New York'
+  },
+  sara: {
+    age: 24,
+    gender: 'female',
+    course: 'Mathematics',
+    grade: 'B',
+    city: 'London'
+  },
+  mike: {
+    age: 29,
+    gender: 'male',
+    course: 'Physics',
+    grade: 'A',
+    city: 'Toronto'
+  }
+}
+
+=== Code Execution Successful ===
+
+
+
+
+
+
+
+
+
+
+
