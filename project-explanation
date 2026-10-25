@@ -1,0 +1,47 @@
+Our project is the World Vision UK website. It is a charity platform that helps people support children and communities through child sponsorship and donations.
+
+The website allows users to explore sponsorship opportunities, learn about charitable activities, select donation amounts, and make contributions through available payment options.
+
+From the frontend perspective, the project involves developing responsive user interfaces, implementing interactive forms, integrating APIs, handling user interactions, and ensuring a consistent experience across desktop and mobile devices.
+
+My responsibilities include understanding business requirements, reviewing UI designs, developing reusable components, integrating backend APIs, fixing UI issues, and collaborating with the backend and QA teams.
+
+We follow the development process from requirement analysis and implementation through testing, bug fixing, code review, and deployment. I would also like to walk you through the modules I handle, the current development status, and any ongoing tasks so we can align on priorities.
+
+
+
+
+4. Questions your new PM may ask
+PM's question	What you should explain
+What does this project do?	Its charity, sponsorship, and donation business purpose.
+What is your role?	Your actual frontend responsibilities and ownership.
+Which technologies do you use?	Your project's real React/JavaScript, styling, testing, and build tools.
+Which modules do you handle?	The specific pages or features assigned to you.
+How do you track tasks?	Your actual Jira, Git, and code-review workflow.
+What are you currently working on?	Current tasks, progress, blockers, and expected completion.
+What challenges do you face?	Real technical issues and how you resolve them.
+
+Important: I can identify the website's visible functionality from the link, but I cannot confirm its internal architecture,
+API design, or the exact modules you own from the public page alone. Explain those based on your actual project experience.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. How to explain your daily workflow
+A new PM may want to know how you receive and complete development tasks.
+1. Requirement discussion: Understand the user story, acceptance criteria, and business requirements.
+2. Task planning: Review the assigned Jira ticket, dependencies, priority, and estimated effort.
+3. Development: Review the existing code, implement the UI or feature, and integrate the required APIs.
+4. Validation: Check responsiveness, functionality, validation messages, and error scenarios.
+5. Code review: Commit changes to Git and create a pull request for review.
+6. QA and release: Fix reported defects, support regression testing, and help with deployment when required.
